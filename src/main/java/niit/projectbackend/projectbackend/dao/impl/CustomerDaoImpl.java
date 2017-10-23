@@ -60,6 +60,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
 	
 	@SuppressWarnings("unchecked")
+	@Override
 	public List<Customer> getALLCustomer() {
 	  return sessionFactory.getCurrentSession().createQuery("from Customer").getResultList(); 
 	}

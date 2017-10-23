@@ -1,7 +1,6 @@
 package niit.projectbackend.projectbackend.dao;
 
 import java.util.List;
-
 import org.springframework.stereotype.Component;
 import niit.projectbackend.projectbackend.Customer;
 

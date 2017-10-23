@@ -1,15 +1,12 @@
 package niit.projectbackend.projectbackend;
 
-import java.util.List;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import niit.projectbackend.projectbackend.dao.CustomerDao;
 
-public class Testing {
+public class customerTesting {
 	
 	//we have to declare reference variables here to access it in any method
 	AnnotationConfigApplicationContext context;
@@ -46,7 +43,7 @@ public class Testing {
      @Test
      public void customerDeleteTest()
      {
-    	 customer.setCustomerId(40);
+    	 customer.setCustomerId(41);
     	 Assert.assertEquals("Data Deleted",true,customerDao.deleteCustomer(customer));
      }
      @Test  
@@ -65,16 +62,15 @@ public class Testing {
     	customer.setLastName("Shah");
     	Assert.assertEquals("Updated",true,customerDao.updateCustomer(customer));
     }
-    
+    /*
     @Test
     public void customerListTest()
     {
     	List<Customer> customerList=customerDao.getALLCustomer();
-    	boolean bool=((Object) customerList).hasNext();
+    	boolean bool=customerList.hasNext();
     	System.out.println(customerList.size());
     	//Assert.assertEquals("",true,customerList.isEmpty());
     	//Assert.assertThat(customerList, not(IsEmptyList.empty()));
-
-    }
+    }*/
      
 }     
