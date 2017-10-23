@@ -16,6 +16,7 @@ public class Customer {
 		private String password;
 		@Transient
 		private String ConfirmPassword;
+		
 		public Integer getCustomerId() {
 			return customerId;
 		}

@@ -1,5 +1,7 @@
 package niit.projectbackend.projectbackend.dao;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 import niit.projectbackend.projectbackend.Customer;
 
@@ -7,9 +9,9 @@ import niit.projectbackend.projectbackend.Customer;
 public interface CustomerDao {
 	
 	public boolean addCustomer(Customer customer);
-	public boolean getCustomer(Customer customer);
-	//public Customer updateCustomer(Customer customer);
-	//public boolean deleteCustomer(Customer customer);
-	//public List<Customer> getALLCustomer(Customer customer);
+	public boolean deleteCustomer(Customer customer);
+	public Customer getCustomer(Integer id);
+	public boolean updateCustomer(Customer customer);
+	public List<Customer> getALLCustomer();
 
 }
